@@ -19,3 +19,12 @@ if (menuButton && mobileNav) {
 }
 
 document.querySelector('#year')?.replaceChildren(String(new Date().getFullYear()));
+
+const comparison = document.querySelector('[data-before-after]');
+const comparisonRange = comparison?.querySelector('.before-after__range');
+
+if (comparison && comparisonRange) {
+  const updateComparison = () => comparison.style.setProperty('--split', `${comparisonRange.value}%`);
+  comparisonRange.addEventListener('input', updateComparison);
+  updateComparison();
+}
