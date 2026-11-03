@@ -1,244 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mac Drains – Blocked Drains, Plumbing & Cleaning</title>
-<meta name="description" content="Mac Drains clears blocked drains and handles plumbing and cleaning jobs. Call 0772 809 297 or 0712 543 459.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#F2F5F6;--surface:#FFFFFF;--ink:#17242B;--muted:#53656E;--steel:#22323A;
-  --water:#1573A0;--water-ink:#0E5A7E;--signal:#FFC20E;--signal-ink:#17242B;--line:#CBD6DB;
-  --on-steel:#EAF1F3;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    color-scheme:dark;
-    --bg:#0F1A1F;--surface:#17262D;--ink:#E9F0F2;--muted:#9FB2BA;--steel:#0A1317;
-    --water:#4FB4E0;--water-ink:#7CCBEE;--line:#2A3D46;--on-steel:#EAF1F3;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101b21">
+  <meta name="description" content="Mac Drains clears blocked drains, repairs plumbing and handles cleaning work across Zimbabwe. Call 0772 809 297 or WhatsApp today.">
+  <meta property="og:title" content="Mac Drains — Get water moving again">
+  <meta property="og:description" content="Blocked drain? Plumbing problem? Mac Drains gives you a real person, a clear answer and a practical next step.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="hero-drain.webp">
+  <title>Mac Drains — Blocked Drains, Plumbing & Cleaning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mac Drains",
+    "description": "Blocked drain clearing, plumbing repairs and cleaning services in Zimbabwe.",
+    "telephone": ["+263772809297", "+263712543459"],
+    "email": "macdrains@yahoo.com",
+    "areaServed": "Zimbabwe",
+    "serviceType": ["Blocked drain clearing", "Plumbing repairs", "Cleaning services"]
   }
-}
-:root[data-theme="dark"]{
-  color-scheme:dark;
-  --bg:#0F1A1F;--surface:#17262D;--ink:#E9F0F2;--muted:#9FB2BA;--steel:#0A1317;
-  --water:#4FB4E0;--water-ink:#7CCBEE;--line:#2A3D46;--on-steel:#EAF1F3;
-}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
-h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;line-height:1.02;margin:0;letter-spacing:.2px}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-
-/* header */
-header{background:var(--steel);color:var(--on-steel);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--steel);z-index:30}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
-.logo{font-family:"Barlow Condensed",Impact,sans-serif;font-weight:800;font-size:28px;text-decoration:none;letter-spacing:.5px}
-.logo span{color:var(--signal)}
-.bar nav{display:flex;gap:22px;align-items:center}
-.bar nav a{text-decoration:none;font-weight:500;font-size:15px;opacity:.85}
-.bar nav a:hover{opacity:1}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 22px;border-radius:6px;font:700 19px/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.4px;text-decoration:none;border:2px solid transparent;cursor:pointer}
-.btn-signal{background:var(--signal);color:var(--signal-ink)}
-.btn-signal:hover{filter:brightness(1.07)}
-.btn-line{border-color:currentColor;color:inherit}
-.btn-line:hover{background:rgba(255,255,255,.08)}
-@media(max-width:640px){.bar nav a:not(.btn){display:none}}
-
-/* hero: a pipe runs down the left edge */
-.hero{background:var(--steel);color:var(--on-steel);padding:56px 0 72px;position:relative;overflow:hidden}
-.hero .wrap{position:relative}
-.pipe{position:absolute;left:0;top:-56px;bottom:-72px;width:14px;background:linear-gradient(90deg,#5C7480,#9FB6C1 45%,#5C7480);border-radius:0 0 7px 7px}
-.hero-body{padding-left:34px}
-.hero h1{font-size:clamp(46px,10.5vw,96px);font-weight:800;max-width:11ch}
-.hero p.lead{max-width:46ch;font-size:19px;margin:22px 0 30px;color:#C9D8DD}
-.numbers{display:grid;gap:12px;max-width:560px}
-.num{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 20px;border-radius:8px;background:var(--signal);color:var(--signal-ink);text-decoration:none}
-.num small{display:block;font-size:14px;font-weight:600;opacity:.75;line-height:1.2}
-.num b{font:800 clamp(30px,8vw,44px)/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:1px}
-.num svg{flex:none}
-.num:nth-child(2){background:transparent;color:var(--on-steel);border:2px solid var(--signal)}
-.num:nth-child(2) small{opacity:.8}
-.num:hover{transform:translateY(-1px)}
-
-/* sections */
-section{padding:72px 0}
-h2{font-size:clamp(34px,6vw,52px);font-weight:700;margin-bottom:10px}
-.sub{color:var(--muted);max-width:52ch;margin:0 0 34px}
-
-.svc{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
-.svc li{display:grid;grid-template-columns:56px 1fr;gap:6px 18px;padding:24px 0;border-bottom:1px solid var(--line)}
-.svc .ic{grid-row:span 2;width:48px;height:48px;border-radius:50%;background:var(--water);color:#fff;display:grid;place-items:center}
-:root[data-theme="dark"] .svc .ic{color:#06222F}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .svc .ic{color:#06222F}}
-.svc h3{font-size:30px;font-weight:700}
-.svc p{margin:0;color:var(--muted);max-width:58ch}
-@media(min-width:760px){
-  .svc li{grid-template-columns:56px 260px 1fr;align-items:start}
-  .svc .ic{grid-row:auto}
-}
-
-.why{background:var(--surface);border-block:1px solid var(--line)}
-.cols{display:grid;gap:36px}
-@media(min-width:760px){.cols{grid-template-columns:1fr 1fr;gap:64px}}
-.facts{list-style:none;margin:0;padding:0;display:grid;gap:18px}
-.facts li{padding-left:22px;border-left:5px solid var(--signal)}
-.facts b{display:block;font:700 24px/1.15 "Barlow Condensed",Impact,sans-serif}
-.facts span{color:var(--muted)}
-
-.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:0}
-.steps li{counter-increment:s;position:relative;padding:0 0 30px 64px}
-.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--steel);color:var(--signal);display:grid;place-items:center;font:800 24px/1 "Barlow Condensed",Impact,sans-serif;z-index:1}
-.steps li::after{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--line)}
-.steps li:last-child::after{display:none}
-.steps h3{font-size:26px;margin-bottom:4px}
-.steps p{margin:0;color:var(--muted)}
-
-/* contact */
-.contact{background:var(--steel);color:var(--on-steel)}
-.contact .sub{color:#B7C9CF}
-.ways{display:grid;gap:14px}
-@media(min-width:760px){.ways{grid-template-columns:repeat(3,1fr)}}
-.way{display:block;padding:22px;border:2px solid #3A505A;border-radius:8px;text-decoration:none}
-.way:hover{border-color:var(--signal)}
-.way small{display:block;color:#9FB6C1;font-weight:500}
-.way b{display:block;font:700 30px/1.1 "Barlow Condensed",Impact,sans-serif;margin-top:4px;overflow-wrap:anywhere}
-.way em{font-style:normal;color:var(--signal);font-weight:600;font-size:15px}
-.wa{margin-top:22px}
-
-footer{background:var(--steel);color:#8FA5AD;border-top:1px solid #2F434C;padding:22px 0 26px;font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
-
-/* floating call button on phones */
-.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:none}
-.fab .btn{box-shadow:0 6px 20px rgba(0,0,0,.35)}
-@media(max-width:760px){.fab{display:block}body{padding-bottom:70px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.num:hover{transform:none}}
-</style>
+  </script>
 </head>
 <body>
-
-<header>
-  <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="Mac Drains home">MAC<span>DRAINS</span></a>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#how">How it works</a>
-      <a href="#contact">Contact</a>
-      <a class="btn btn-signal" href="tel:+263772809297">Call now</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Mac Drains home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-copy"><strong>MAC<span>DRAINS</span></strong><small>BLOCKED DRAINS · PLUMBING · CLEANING</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="button button--signal header-cta" href="tel:+263772809297">Call now <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav shell" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main id="top">
-  <div class="hero">
-    <div class="wrap">
-      <div class="pipe" aria-hidden="true"></div>
-      <div class="hero-body">
-        <h1>Blocked drain? We clear it.</h1>
-        <p class="lead">Mac Drains unblocks drains, fixes plumbing and handles cleaning jobs. Call, tell us what’s wrong, and we’ll sort it out.</p>
-        <div class="numbers">
-          <a class="num" href="tel:+263772809297">
-            <span><small>Call or WhatsApp</small><b>0772 809 297</b></span>
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
-          </a>
-          <a class="num" href="tel:+263712543459">
-            <span><small>Second line</small><b>0712 543 459</b></span>
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
-          </a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-pipe" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> The problem is urgent. The next step is simple.</p>
+          <h1 id="hero-title">Get water<br><em>moving again.</em></h1>
+          <p class="hero-lead">Blocked drain, leaking pipe or a clean-up that cannot wait? Talk to Mac Drains and get a straight answer from a real person.</p>
+          <div class="hero-actions">
+            <a class="button button--signal button--large" href="tel:+263772809297"><span class="button-icon" aria-hidden="true">↗</span> Call 0772 809 297</a>
+            <a class="text-action" href="https://wa.me/263772809297?text=Hello%20Mac%20Drains%2C%20I%20need%20help%20with%20a%20drain%20or%20plumbing%20problem." target="_blank" rel="noopener">WhatsApp us <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-reassurance"><span class="status-dot" aria-hidden="true"></span><span><strong>Tell us what is happening.</strong><br>We will help you work out what to do next.</span></div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-media-image" role="img" aria-label="Drain technician clearing a blocked drainage line"></div>
+          <div class="hero-media-card"><span class="card-kicker">THE MAC DRAINS STANDARD</span><strong>Clear the blockage.<br>Leave it better.</strong><span class="card-arrow" aria-hidden="true">↗</span></div>
+          <div class="hero-media-note"><span class="note-line"></span><span>Practical help for homes<br>and businesses in Zimbabwe.</span></div>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="shell hero-bottom"><span>URGENT DRAIN CLEARING</span><i></i><span>PLUMBING REPAIRS</span><i></i><span>CLEANING WORK</span></div>
+    </section>
 
-  <section id="services">
-    <div class="wrap">
-      <h2>What we do</h2>
-      <p class="sub">Drains are our main job. We also take on plumbing and cleaning work around your home or business.</p>
-      <ul class="svc">
-        <li>
-          <span class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4.5 5.5 7.2 5.5 10.5a5.5 5.5 0 0 1-11 0C6.5 10.2 9 7.5 12 3z"/></svg></span>
-          <h3>Blocked drains</h3>
-          <p>Slow sinks, backed-up toilets, overflowing manholes and smelly drains. We find the blockage and clear it so water flows again.</p>
-        </li>
-        <li>
-          <span class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span>
-          <h3>Plumbing</h3>
-          <p>Leaking taps and pipes, toilet and basin repairs, new fittings and general plumbing fixes.</p>
-        </li>
-        <li>
-          <span class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8zM19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9z"/></svg></span>
-          <h3>Cleaning</h3>
-          <p>Cleaning jobs for homes, yards and business premises, including clean-ups after drain and plumbing work.</p>
-        </li>
-        <li>
-          <span class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4m0 4h.01"/></svg></span>
-          <h3>Something else?</h3>
-          <p>Not sure which service you need? Call or send a message and describe the problem. If we can fix it, we’ll say so.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="why">
-    <div class="wrap cols">
-      <div>
-        <h2>Why call Mac Drains</h2>
-        <p class="sub">One call gets you a person who understands drains.</p>
+    <section class="intent-section" aria-labelledby="intent-title">
+      <div class="shell">
+        <div class="section-intro section-intro--split"><div><p class="eyebrow"><span class="eyebrow-line"></span> Start with what is happening</p><h2 id="intent-title">One call.<br><em>Less guessing.</em></h2></div><p>Do not worry about choosing the perfect service name. Tell us what you can see, smell or hear, and we will point you in the right direction.</p></div>
+        <div class="intent-grid">
+          <a class="intent-card intent-card--urgent" href="tel:+263772809297"><span class="intent-number">01</span><span class="intent-label">RIGHT NOW</span><h3>Water is backing up.</h3><p>Slow sinks, blocked toilets, overflowing manholes or a drain that smells wrong.</p><span class="intent-link">Call for drain help <b>↗</b></span></a>
+          <a class="intent-card" href="#services"><span class="intent-number">02</span><span class="intent-label">NEEDS SORTING</span><h3>Something is leaking.</h3><p>Taps, pipes, toilets, basins and fittings that need a proper repair—not a temporary patch.</p><span class="intent-link">See plumbing services <b>→</b></span></a>
+          <a class="intent-card" href="https://wa.me/263772809297?text=Hello%20Mac%20Drains%2C%20I%20need%20a%20cleaning%20or%20site%20clean-up%20quote." target="_blank" rel="noopener"><span class="intent-number">03</span><span class="intent-label">PLAN AHEAD</span><h3>The place needs a reset.</h3><p>Home, yard or business premises that need cleaning or a post-job clean-up.</p><span class="intent-link">Message about cleaning <b>→</b></span></a>
+        </div>
       </div>
-      <ul class="facts">
-        <li><b>Drains are the specialty</b><span>Blocked drains are what we do every day, so we know where to look.</span></li>
-        <li><b>Plumbing and cleaning too</b><span>One contact for the whole job, not three different people.</span></li>
-        <li><b>Straight talk</b><span>We tell you what’s wrong and what it will take to fix it.</span></li>
-      </ul>
-    </div>
-  </section>
+    </section>
 
-  <section id="how">
-    <div class="wrap">
-      <h2>How it works</h2>
-      <p class="sub">Three steps from blocked to flowing.</p>
-      <ol class="steps">
-        <li><h3>Call or message us</h3><p>Tell us what’s happening and where you are.</p></li>
-        <li><h3>We check the problem</h3><p>We look at the drain or pipe and explain what needs to be done.</p></li>
-        <li><h3>We fix it and clean up</h3><p>Water flows, the area is left tidy, and you’re done.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <h2>Get your drain flowing</h2>
-      <p class="sub">Call either number, WhatsApp us, or send an email. Tap to start.</p>
-      <div class="ways">
-        <a class="way" href="tel:+263772809297"><small>Phone</small><b>0772 809 297</b><em>Tap to call</em></a>
-        <a class="way" href="tel:+263712543459"><small>Phone</small><b>0712 543 459</b><em>Tap to call</em></a>
-        <a class="way" href="mailto:macdrains@yahoo.com?subject=Drain%20or%20plumbing%20enquiry"><small>Email</small><b>macdrains@yahoo.com</b><em>Send an email</em></a>
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <div class="shell">
+        <div class="section-intro"><p class="eyebrow"><span class="eyebrow-line"></span> What we actually do</p><h2 id="services-title">The right fix<br><em>for the real problem.</em></h2><p>Mac Drains is built around the jobs people need solved, not a long list of vague promises.</p></div>
+        <div class="service-list">
+          <article class="service-row"><div class="service-index">01</div><div class="service-icon service-icon--water" aria-hidden="true">≈</div><div class="service-body"><h3>Blocked drains</h3><p>Find the blockage, clear the line and help you understand what caused the problem. For slow sinks, backed-up toilets, overflowing manholes and stubborn smells.</p><div class="service-tags"><span>Drain clearing</span><span>Sewer lines</span><span>Emergency call</span></div></div><a class="service-arrow" href="tel:+263772809297" aria-label="Call about blocked drains">↗</a></article>
+          <article class="service-row"><div class="service-index">02</div><div class="service-icon service-icon--tool" aria-hidden="true">+</div><div class="service-body"><h3>Plumbing repairs</h3><p>Practical repairs for leaking taps and pipes, toilets, basins, sinks and general plumbing work around the home or business.</p><div class="service-tags"><span>Leaks</span><span>Fixtures</span><span>Maintenance</span></div></div><a class="service-arrow" href="https://wa.me/263712543459?text=Hello%20Mac%20Drains%2C%20I%20need%20help%20with%20a%20plumbing%20repair." target="_blank" rel="noopener" aria-label="WhatsApp about plumbing repairs">↗</a></article>
+          <article class="service-row"><div class="service-index">03</div><div class="service-icon service-icon--spark" aria-hidden="true">✦</div><div class="service-body"><h3>Cleaning work</h3><p>Cleaning for homes, yards and business premises, including the tidy-up after drainage or plumbing work is complete.</p><div class="service-tags"><span>Home</span><span>Yard</span><span>Business premises</span></div></div><a class="service-arrow" href="mailto:macdrains@yahoo.com?subject=Cleaning%20enquiry" aria-label="Email about cleaning work">↗</a></article>
+        </div>
       </div>
-      <div class="wa">
-        <a class="btn btn-signal" href="https://wa.me/263772809297?text=Hello%20Mac%20Drains%2C%20I%20need%20help%20with%20a%20blocked%20drain." target="_blank" rel="noopener">Message us on WhatsApp</a>
-      </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer>
-  <div class="wrap">
-    <span>© <span id="yr">2026</span> Mac Drains. Blocked drains, plumbing and cleaning.</span>
-    <span>0772 809 297 · 0712 543 459</span>
-  </div>
-</footer>
+    <section class="proof-section" aria-labelledby="proof-title">
+      <div class="shell proof-grid"><div class="proof-statement"><p class="eyebrow eyebrow--light"><span class="eyebrow-line"></span> Why people call</p><h2 id="proof-title">Straight talk.<br><em>Solid work.</em></h2><p>When a drain fails, you do not need a glossy speech. You need someone to listen, explain the likely problem and leave the area in a better state.</p><a class="button button--outline" href="#contact">Talk to Mac Drains <span aria-hidden="true">→</span></a></div><div class="proof-points"><div class="proof-point"><span>01</span><div><h3>Drain work is not an afterthought</h3><p>Blocked drains and sewer problems are part of the core job, not a side item on a generic services page.</p></div></div><div class="proof-point"><span>02</span><div><h3>You get a person, not a maze</h3><p>Call either number or send a WhatsApp message. Describe the situation in your own words.</p></div></div><div class="proof-point"><span>03</span><div><h3>The next step stays clear</h3><p>We help you understand what needs checking, what can be done and what to prepare before a visit.</p></div></div></div></div>
+    </section>
 
-<div class="fab"><a class="btn btn-signal" href="tel:+263772809297" aria-label="Call Mac Drains">Call Mac Drains</a></div>
+    <section class="process-section" id="process" aria-labelledby="process-title">
+      <div class="shell"><div class="section-intro section-intro--split"><div><p class="eyebrow"><span class="eyebrow-line"></span> What happens next</p><h2 id="process-title">From blocked<br><em>to flowing.</em></h2></div><p>A simple process for an unsimple problem. No online form before you can reach a human.</p></div><ol class="process-list"><li><span class="process-number">01</span><div><h3>Call or message</h3><p>Tell us what is happening, where you are and how urgent it feels.</p></div></li><li><span class="process-number">02</span><div><h3>We understand the job</h3><p>We ask the useful questions and explain what the next step may involve.</p></div></li><li><span class="process-number">03</span><div><h3>We do the work</h3><p>We clear, repair or clean the problem and leave you with a clear handover.</p></div></li></ol></div>
+    </section>
 
-<script>
-document.getElementById('yr').textContent = new Date().getFullYear();
-</script>
+    <section class="coverage-section" aria-labelledby="coverage-title"><div class="shell coverage-grid"><div><p class="eyebrow"><span class="eyebrow-line"></span> Location matters</p><h2 id="coverage-title">Zimbabwe-wide<br><em>practical help.</em></h2></div><div><p class="coverage-lead">We work with homes, yards and businesses across Zimbabwe. Not sure whether your area is covered? Ask before you explain the whole story.</p><div class="coverage-actions"><a class="button button--dark" href="tel:+263772809297">Check your area <span aria-hidden="true">↗</span></a><span class="coverage-note">Tell us your town or suburb when you call.</span></div></div></div></section>
+
+    <section class="faq-section" id="faq" aria-labelledby="faq-title"><div class="shell faq-grid"><div class="section-intro"><p class="eyebrow"><span class="eyebrow-line"></span> Before you call</p><h2 id="faq-title">Good questions.<br><em>Clear answers.</em></h2><p>Still unsure what to do? Start with the closest question and then call or WhatsApp us.</p></div><div class="faq-list"><details open><summary>Is this an emergency?</summary><p>If water is backing up, a toilet is overflowing, or a manhole is spilling, call rather than waiting. Turn off nearby water if it is safe and keep people away from contaminated water.</p></details><details><summary>Do you work after hours?</summary><p>Availability depends on the job and schedule. Call either number and explain how urgent the situation is so we can tell you what is realistic.</p></details><details><summary>How do you price the work?</summary><p>The right price depends on the blockage, access and work required. Send a clear description or photos on WhatsApp and we can start with the useful questions.</p></details><details><summary>What should I do before you arrive?</summary><p>Keep the affected area accessible, move valuables away from standing water, and avoid using fixtures connected to the blocked line if that makes the problem worse.</p></details></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="eyebrow eyebrow--light"><span class="eyebrow-line"></span> Make the call easier</p><h2 id="contact-title">Tell us what<br><em>is going on.</em></h2><p class="contact-lead">A photo, a short voice note or two sentences is enough to start. We will help you work out the next move.</p></div><div class="contact-options"><a class="contact-option contact-option--primary" href="tel:+263772809297"><span class="contact-label">Main line</span><strong>0772 809 297</strong><span>Call or WhatsApp <b>↗</b></span></a><a class="contact-option" href="tel:+263712543459"><span class="contact-label">Second line</span><strong>0712 543 459</strong><span>Call Mac Drains <b>↗</b></span></a><a class="contact-option" href="mailto:macdrains@yahoo.com?subject=Mac%20Drains%20enquiry"><span class="contact-label">Email</span><strong>macdrains@yahoo.com</strong><span>Send an enquiry <b>↗</b></span></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-top"><a class="brand brand--footer" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-copy"><strong>MAC<span>DRAINS</span></strong><small>BLOCKED DRAINS · PLUMBING · CLEANING</small></span></a><p>Get water moving again.<br><em>One clear next step at a time.</em></p><div class="footer-links"><a href="#services">Services</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="shell footer-bottom"><span>© <span id="year">2026</span> Mac Drains · Zimbabwe</span><span>0772 809 297 · 0712 543 459</span></div></footer>
+  <div class="mobile-call-bar"><a href="tel:+263772809297"><span class="call-bar-icon">↗</span><span><small>Need help now?</small><strong>Call Mac Drains</strong></span></a><a href="https://wa.me/263772809297?text=Hello%20Mac%20Drains%2C%20I%20need%20help." target="_blank" rel="noopener" aria-label="WhatsApp Mac Drains">WA</a></div>
+  <script src="script.js" defer></script>
 </body>
 </html>
