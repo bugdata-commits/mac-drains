@@ -1,12 +1,9 @@
-# Mac Drains rebuild
+# Mac Drains website refresh
 
-- [ ] Deliver a mobile-first premium home page with a distinctive Mac Drains identity and polished responsive layouts across phone, tablet, and desktop.
-- [ ] Keep 0772 809 297, 0712 543 459, and macdrains@yahoo.com visible and actionable through phone, WhatsApp, and email paths.
-- [ ] Separate urgent blocked-drain visitors from planned plumbing and cleaning enquiries with clear calls to action.
-- [ ] Present blocked drain clearing, plumbing repairs, and cleaning as service-specific choices with benefit-led copy and next steps.
-- [ ] Add trust and proof content without inventing reviews, licenses, awards, or project claims that were not supplied.
-- [ ] Explain the customer process from first contact through assessment, work, and clean-up.
-- [ ] Communicate Zimbabwe service coverage while asking visitors to confirm their exact area.
-- [ ] Add accessible FAQs covering urgency, availability, expectations, pricing approach, and visit preparation.
-- [ ] Include semantic headings, descriptive metadata, JSON-LD, crawl-friendly copy, and a route manifest.
-- [ ] Validate the experience on desktop, tablet, and mobile Preview sizes before checkpointing.
+- [x] Present CCTV drain inspections, high-pressure jetting, drain cleaning and flushing, blocked drains/sewers, plumbing and sewer repairs, drainage maintenance, and cleaning/site tidy-up as clear service choices.
+- [x] Make call, WhatsApp, and email actions visible and service-specific, using the existing Mac Drains contact details.
+- [x] Explain that service availability depends on location, and invite visitors to confirm their town or suburb.
+- [x] Explain the enquiry-to-work process and add practical FAQs about CCTV inspection, jetting suitability, recurring blockages, and what to send.
+- [x] Use original illustrative service photography and clearly disclose that service photos are illustrative.
+- [x] Keep the site static and GitHub Pages-compatible, with responsive layout, accessible navigation, metadata, and local-business structured data.
+- [ ] Review the published mobile and desktop layouts and confirm GitHub Pages deployment.
