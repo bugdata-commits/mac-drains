@@ -5,5 +5,6 @@
 - [x] Explain that service availability depends on location, and invite visitors to confirm their town or suburb.
 - [x] Explain the enquiry-to-work process and add practical FAQs about CCTV installation, jetting suitability, recurring blockages, and what to send.
 - [x] Use original illustrative service photography and clearly disclose that service photos are illustrative.
+- [x] Add a labeled, validated customer-service request form that opens a prefilled WhatsApp message and explains that sending an inquiry does not confirm an appointment.
 - [x] Keep the site static and GitHub Pages-compatible, with responsive layout, accessible navigation, metadata, and local-business structured data.
 - [ ] Review the published mobile and desktop layouts and confirm GitHub Pages deployment.

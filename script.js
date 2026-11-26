@@ -25,3 +25,46 @@ if (menuButton && mobileNav) {
 }
 
 document.querySelector('#year')?.replaceChildren(String(new Date().getFullYear()));
+
+
+const requestForm = document.querySelector('#service-request-form');
+if (requestForm) {
+  const status = document.querySelector('#request-status');
+  const whatsappLink = document.querySelector('#whatsapp-request-link');
+  const prepareButton = document.querySelector('#prepare-request');
+  const preferredDate = requestForm.elements.preferredDate;
+
+  if (preferredDate) {
+    const today = new Date();
+    today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+    preferredDate.min = today.toISOString().slice(0, 10);
+  }
+
+  const prepareRequest = (event) => {
+    event.preventDefault();
+    if (!requestForm.reportValidity()) return;
+
+    const values = new FormData(requestForm);
+    const dateValue = values.get('preferredDate');
+    const dateText = dateValue
+      ? new Intl.DateTimeFormat('en', { dateStyle: 'long' }).format(new Date(`${dateValue}T00:00:00`))
+      : 'No preferred date';
+    const message = [
+      'Hello Mac Drains, I would like to request a service or callback.',
+      `Name: ${values.get('name')}`,
+      `Phone: ${values.get('phone')}`,
+      `Service: ${values.get('service')}`,
+      `Town/suburb: ${values.get('location')}`,
+      `Preferred date: ${dateText}`,
+      `What is happening: ${values.get('message')}`,
+      'I understand this is a request, not a confirmed appointment.'
+    ].join('\n');
+
+    whatsappLink.href = `https://wa.me/263772809297?text=${encodeURIComponent(message)}`;
+    status.hidden = false;
+    whatsappLink.focus({ preventScroll: true });
+  };
+
+  prepareButton?.addEventListener('click', prepareRequest);
+  requestForm.addEventListener('submit', prepareRequest);
+}
